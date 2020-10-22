@@ -22,6 +22,12 @@ export default createGlobalStyle`
     --color-background: #312E38;
     --color-inputs: #232129;
     --color-error: #c53030;
+    --color-toast-info-background: #ebf8ff;
+    --color-toast-info-text: #3172b7;
+    --color-toast-success-background: #e6fffa;
+    --color-toast-success-text: #2e656a;
+    --color-toast-error-background: #fddede;
+    --color-toast-error-text: #c53030;
   }
 
   body {
