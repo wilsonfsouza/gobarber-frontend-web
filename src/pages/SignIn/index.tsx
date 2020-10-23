@@ -8,7 +8,8 @@ import LogoImg from '../../assets/images/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 import { Container, Content, Background } from './styles';
-import { useAuth } from '../../hooks/AuthContext';
+import { useAuth } from '../../hooks/auth';
+import { useToast } from '../../hooks/toast';
 
 interface SignInFormData {
   email: string;
@@ -17,6 +18,7 @@ interface SignInFormData {
 const SignIn: React.FunctionComponent = () => {
   const formRef = useRef<FormHandles>(null);
   const { signIn } = useAuth();
+  const { addToast, removeToast } = useToast();
 
   const handleFormSubmit = useCallback(
     async (data: SignInFormData) => {
@@ -31,19 +33,20 @@ const SignIn: React.FunctionComponent = () => {
         await schema.validate(data, {
           abortEarly: false,
         });
-        signIn({
+        await signIn({
           email: data.email,
           password: data.password,
         });
       } catch (err) {
         if (err instanceof Yup.ValidationError) {
           const errors = getValidationErrors(err);
+
           formRef.current?.setErrors(errors);
         }
-        // disparar um toast
+        addToast();
       }
     },
-    [signIn],
+    [signIn, addToast],
   );
   return (
     <Container>
