@@ -18,7 +18,7 @@ interface SignInFormData {
 const SignIn: React.FunctionComponent = () => {
   const formRef = useRef<FormHandles>(null);
   const { signIn } = useAuth();
-  const { addToast, removeToast } = useToast();
+  const { addToast } = useToast();
 
   const handleFormSubmit = useCallback(
     async (data: SignInFormData) => {
@@ -43,7 +43,12 @@ const SignIn: React.FunctionComponent = () => {
 
           formRef.current?.setErrors(errors);
         }
-        addToast();
+        addToast({
+          type: 'error',
+          title: 'Authentication Error',
+          description:
+            'Username or login are invalid, please check your credentials.',
+        });
       }
     },
     [signIn, addToast],
