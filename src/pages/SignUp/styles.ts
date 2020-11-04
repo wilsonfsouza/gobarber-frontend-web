@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import signInBackgroundImg from '../../assets/images/sign-up-background.png';
 
 export const Container = styled.div`
@@ -14,7 +14,25 @@ export const Content = styled.div`
   justify-content: center;
   width: 100%;
   max-width: 700px;
+`;
 
+const appearFromRight = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(50px)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+`;
+export const AnimationContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  animation: ${appearFromRight} 1s;
   form {
     margin: 5rem;
     width: 340px;
@@ -37,7 +55,7 @@ export const Content = styled.div`
     }
   }
   > a {
-    color: var(--color-white);
+    color: var(--color-primary);
     text-decoration: none;
     display: block;
     margin-top: 1.5rem;
@@ -47,7 +65,7 @@ export const Content = styled.div`
     align-items: center;
 
     &:hover {
-      color: var(--color-white-darken);
+      color: var(--color-primary-darken);
     }
     svg {
       margin-right: 1rem;
