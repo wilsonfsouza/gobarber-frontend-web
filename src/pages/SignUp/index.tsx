@@ -3,13 +3,13 @@ import { FiArrowLeft, FiMail, FiUser, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
-
+import { Link } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
 
 import LogoImg from '../../assets/images/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import { Container, Content, Background } from './styles';
+import { Container, Content, AnimationContainer, Background } from './styles';
 
 const SignUp: React.FunctionComponent = () => {
   const formRef = useRef<FormHandles>(null);
@@ -40,24 +40,26 @@ const SignUp: React.FunctionComponent = () => {
       <Background />
 
       <Content>
-        <img src={LogoImg} alt="GoBarber" />
-        <Form ref={formRef} onSubmit={handleFormSubmit}>
-          <h1>Create your account</h1>
+        <AnimationContainer>
+          <img src={LogoImg} alt="GoBarber" />
+          <Form ref={formRef} onSubmit={handleFormSubmit}>
+            <h1>Create your account</h1>
 
-          <Input name="name" icon={FiUser} type="text" placeholder="Name" />
-          <Input name="email" icon={FiMail} type="text" placeholder="Email" />
-          <Input
-            name="password"
-            icon={FiLock}
-            type="password"
-            placeholder="Password"
-          />
-          <Button type="submit">Sign Up</Button>
-        </Form>
-        <a href="signup">
-          <FiArrowLeft />
-          Return to Login
-        </a>
+            <Input name="name" icon={FiUser} type="text" placeholder="Name" />
+            <Input name="email" icon={FiMail} type="text" placeholder="Email" />
+            <Input
+              name="password"
+              icon={FiLock}
+              type="password"
+              placeholder="Password"
+            />
+            <Button type="submit">Sign Up</Button>
+          </Form>
+          <Link to="/">
+            <FiArrowLeft />
+            Return to Login
+          </Link>
+        </AnimationContainer>
       </Content>
     </Container>
   );

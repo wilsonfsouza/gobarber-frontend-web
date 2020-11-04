@@ -3,11 +3,12 @@ import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 import getValidationErrors from '../../utils/getValidationErrors';
 import LogoImg from '../../assets/images/logo.svg';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
-import { Container, Content, Background } from './styles';
+import { Container, Content, AnimationContainer, Background } from './styles';
 import { useAuth } from '../../hooks/auth';
 import { useToast } from '../../hooks/toast';
 
@@ -42,6 +43,8 @@ const SignIn: React.FunctionComponent = () => {
           const errors = getValidationErrors(err);
 
           formRef.current?.setErrors(errors);
+
+          return;
         }
         addToast({
           type: 'error',
@@ -56,24 +59,26 @@ const SignIn: React.FunctionComponent = () => {
   return (
     <Container>
       <Content>
-        <img src={LogoImg} alt="GoBarber" />
-        <Form ref={formRef} onSubmit={handleFormSubmit}>
-          <h1>Enter your credentials</h1>
+        <AnimationContainer>
+          <img src={LogoImg} alt="GoBarber" />
+          <Form ref={formRef} onSubmit={handleFormSubmit}>
+            <h1>Enter your credentials</h1>
 
-          <Input name="email" icon={FiMail} type="text" placeholder="Email" />
-          <Input
-            name="password"
-            icon={FiLock}
-            type="password"
-            placeholder="Password"
-          />
-          <Button type="submit">Login</Button>
-          <a href="forgot">Forgot password?</a>
-        </Form>
-        <a href="signup">
-          <FiLogIn />
-          Create Account
-        </a>
+            <Input name="email" icon={FiMail} type="text" placeholder="Email" />
+            <Input
+              name="password"
+              icon={FiLock}
+              type="password"
+              placeholder="Password"
+            />
+            <Button type="submit">Login</Button>
+            <Link to="/forgot">Forgot password?</Link>
+          </Form>
+          <Link to="/signup">
+            <FiLogIn />
+            Create Account
+          </Link>
+        </AnimationContainer>
       </Content>
       <Background />
     </Container>
