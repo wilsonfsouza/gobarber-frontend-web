@@ -1,44 +1,152 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/wilsonfsouza/gobarber-frontend-web">
+  <a href="https://github.com/wilsonfsouza/happy-frontend-web/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/wilsonfsouza/gobarber-frontend-web">
+  </a>
 
-## Available Scripts
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F26C6C">
 
-In the project directory, you can run:
 
-### `yarn start`
+  <a href="https://www.linkedin.com/in/wilsonfsouza/">
+    <img alt="Made by Wilson Franca" src="https://img.shields.io/badge/made%20by-Wilson%20Franca-%230AA186">
+  </a>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h1 align="center">
+    <img alt="GoBarber Frontend Web" title="#GitHubExplorer" src="./assets/images/banner.png" />
+</h1>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+<h4 align="center">
+GoBarber Frontend Web (In Progress)
+</h4>
 
-### `yarn test`
+<p align="center">
+ <a href="#-about-the-project">About</a> •
+ <a href="#user-content-️-user-stories">User Stories</a> •
+ <a href="#user-content-️-features">Features</a> •
+ <a href="#-layout">Layout</a> •
+ <a href="#-how-to-run-the-project">How to run</a> •
+ <a href="#-technologies">Technologies</a> •
+ <a href="#-author">Author</a> •
+ <a href="#user-content--license">License</a>
+</p>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## 💻 About the project
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+GoBarber is a web application for appointment scheduling designed for barbershops and hair salons.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+By signing up, clients can schedule a new appointment with all available stylists working at the business. On the other hand, registered stylists have access to a web interface to manage their schedules with real-time updates (new or canceled appointments).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+## ⭐ User Stories
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+> In Progress
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## ⚙️ Features
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> In Progress
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎨 Layout
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+> In Progress
+
+---
+
+## 🚀 How to run the project
+
+### Requirements
+
+Initial requirements:
+[git](https://git-scm.com), [yarn](https://yarnpkg.com/), and a code editor of your choice.
+
+
+#### Running the web application (Frontend)
+
+```bash
+
+# Clone this repository
+$ git clone git@github.com:wilsonfsouza/gobarber-frontend-web.git
+
+# Access the folder in your terminal/cmd/cli
+$ cd gobarber-frontend-web
+
+# Install all dependencies
+$ yarn install
+
+# Start the app in development mode
+$ yarn start
+
+# The application will open at port:3000 - access http://localhost:3000
+
+```
+
+---
+
+## 🛠 Technologies
+
+The following tools were used in this project:
+
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+-   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[React Switch](https://github.com/markusenglund/react-switch)**
+-   **[Styled-components](https://styled-components.com/)**
+-   **[Polished](https://polished.js.org/)**
+-   **[UnForm](https://unform.dev/)**
+-   **[Axios](https://github.com/axios/axios)**
+-   **[Yup](https://github.com/jquense/yup)**
+-   **[Uuid](https://www.npmjs.com/package/uuidv4)**
+-   **[Jest](https://jestjs.io/)**
+-   **[ESLint](https://eslint.org/)**
+-   **[Prettier](https://prettier.io/)**
+-   **[EditorConfig](https://editorconfig.org/)**
+
+> See the file  [package.json](https://github.com/wilsonfsouza/gobarber-frontend-web/blob/master/package.json)
+
+#### [](https://github.com/wilsonfsouza/gobarber-frontend-web#utilities)**Utilities**
+
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**
+-   Markdown:  **[StackEdit](https://stackedit.io/)**,  **[Markdown Emoji](https://gist.github.com/rxaviers/7360908)**
+-   Icons:  **[Feather Icons](https://feathericons.com/)**
+-   Font-family:  **[Roboto](https://fonts.google.com/specimen/Roboto)**
+
+
+---
+
+## 💪 How to contribute to this project
+
+1. **Fork** the project.
+2. Start a new branch with your changes: `git checkout -b my-new-feature`
+3. Save it and create a commit message describing what you have done: `git commit -m "feature: My new feature"`
+4. Send your alterations: `git push origin my-feature`
+
+
+---
+
+## 👨‍💻 Author
+
+<br/>
+<h3 style="display: flex; align-items: center; justify-content: flex-start;">
+ <img style="border-radius: 50%; margin-right: 20px; width: 80px;" src="https://avatars0.githubusercontent.com/u/21347383?s=460&u=fdb399c92e369762d45d6495cbd2e87eef9e4d65&v=4" width="100px;" alt=""/>
+ <br />
+ <sub>Wilson Franca</sub></h3>
+ <br />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Wilson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/wilsonfsouza/)](https://www.linkedin.com/in/wilsonfsouza/)
+[![Gmail Badge](https://img.shields.io/badge/-wilson.franca.92@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:wilson.franca.92@gmail.com)](mailto:wilson.franca.92@gmail.com)
+
+---
+
+## 📝 License
+
+This project is being developed under [MIT License](./LICENSE).
+
+Made with ❤️ by Wilson Franca 👋
+
