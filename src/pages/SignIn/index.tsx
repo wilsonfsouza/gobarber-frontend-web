@@ -73,7 +73,7 @@ const SignIn: React.FunctionComponent = () => {
               placeholder="Password"
             />
             <Button type="submit">Login</Button>
-            <Link to="/forgot">Forgot password?</Link>
+            <Link to="/forgot-password">Forgot password?</Link>
           </Form>
           <Link to="/signup">
             <FiLogIn />
