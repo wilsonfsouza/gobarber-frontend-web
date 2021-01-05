@@ -1,15 +1,18 @@
 import React, { ButtonHTMLAttributes } from 'react';
 import { Container } from './styles';
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+  loading?: boolean;
+};
 
 const Button: React.FunctionComponent<ButtonProps> = ({
   children,
+  loading,
   ...rest
 }) => {
   return (
     <Container type="button" {...rest}>
-      {children}
+      {loading ? 'Loading...' : children}
     </Container>
   );
 };
