@@ -52,6 +52,7 @@
         "tsx": "never"
       }
     ],
+    "import/no-duplicates": "off",
     "no-use-before-define": "off",
     "prettier/prettier": "error"
   },
