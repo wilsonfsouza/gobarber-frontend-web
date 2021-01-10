@@ -1,7 +1,8 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "jest": true
   },
   "extends": [
     "plugin:react/recommended",
@@ -29,8 +30,13 @@
     "prettier"
   ],
   "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "no-unused-expressions": "off",
     "react/jsx-filename-extension": [
       1,
       {
@@ -40,10 +46,15 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/prop-types": "off",
-    "no-unused-expressions": "off",
+    "import/no-duplicates": "off",
     "@typescript-eslint/camelcase": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "error",
+      {
+        "allowExpressions": true
+      }
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -51,10 +62,7 @@
         "ts": "never",
         "tsx": "never"
       }
-    ],
-    "import/no-duplicates": "off",
-    "no-use-before-define": "off",
-    "prettier/prettier": "error"
+    ]
   },
   "settings": {
     "import/resolver": {
