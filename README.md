@@ -61,8 +61,34 @@ Need Authentication:
 
 ## 🎨 Layout
 
-<p align="center" style="display: inline-flex; align-items: flex-start; justify-content: center;">
-  <img style="margin-right: 5px; max-width: 400px;" alt="Landing Page Light Theme" title="#LandingPageLightTheme" src="./docs/assets/index.png" width="100%">
+### **Sign In:**
+
+<p align="center">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Sign In Page" title="#SignInPage" src="./docs/assets/index.png" width="80%">
+</p>
+
+### **Sign Up:**
+
+<p align="center">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Sign Up Page" title="#SignUpPage" src="./docs/assets/create-acc-web-min.png" width="80%">
+</p>
+
+### **Password Recovery:**
+
+<p align="center">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Password Recovery Page" title="#PasswordRecoveryPage" src="./docs/assets/recover-password-web-min.png" width="80%">
+</p>
+
+### **Dashboard:**
+
+<p align="center">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Dashboard Page" title="#DashboardPage" src="./docs/assets/dashboard-web-min.png" width="80%">
+</p>
+
+### **Profile:**
+
+<p align="center">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Profile Page" title="#ProfilePage" src="./docs/assets/profile-web-min.png" width="80%">
 </p>
 
 ---
