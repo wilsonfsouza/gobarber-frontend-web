@@ -37,11 +37,14 @@ GoBarber is a web application for appointment scheduling designed for barbershop
 
 By signing up, clients can schedule a new appointment with all available stylists working at the business. On the other hand, registered stylists have access to a web interface to manage their schedules with real-time updates (new or canceled appointments).
 
+To see the **REST API**, click here: [GoBarber REST API](https://github.com/wilsonfsouza/gobarber-rest-api)<br />
+To see the **mobile client**, click here: [GoBarber Mobile](https://github.com/wilsonfsouza/appbarbershop)
+
 ---
 
 ## ⚙️ Features
 
-The web page was designed to be used by hairstylists. Clients can schedule appointments by using the mobile application.
+The web page was designed to be used by service providers. Clients can schedule appointments by using the mobile application.
 
 
 Don't need authentication:
