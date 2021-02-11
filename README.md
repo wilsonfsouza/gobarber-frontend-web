@@ -13,11 +13,11 @@
 </p>
 
 <h1 align="center">
-    <img alt="GoBarber Frontend Web" title="#GitHubExplorer" src="./assets/images/banner.png" />
+    GoBarber web
 </h1>
 
 <h4 align="center">
-GoBarber Frontend Web (In Progress)
+  Table of contents
 </h4>
 
 <p align="center">
@@ -61,7 +61,9 @@ Need Authentication:
 
 ## 🎨 Layout
 
-> In Progress
+<p align="center" style="display: inline-flex; align-items: flex-start; justify-content: center;">
+  <img style="margin-right: 5px; max-width: 400px;" alt="Landing Page Light Theme" title="#LandingPageLightTheme" src="./docs/assets/index.png" width="100%">
+</p>
 
 ---
 
