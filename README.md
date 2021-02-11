@@ -22,7 +22,6 @@ GoBarber Frontend Web (In Progress)
 
 <p align="center">
  <a href="#-about-the-project">About</a> •
- <a href="#user-content-️-user-stories">User Stories</a> •
  <a href="#user-content-️-features">Features</a> •
  <a href="#-layout">Layout</a> •
  <a href="#-how-to-run-the-project">How to run</a> •
@@ -40,15 +39,23 @@ By signing up, clients can schedule a new appointment with all available stylist
 
 ---
 
-## ⭐ User Stories
-
-> In Progress
-
----
-
 ## ⚙️ Features
 
-> In Progress
+The web page was designed to be used by hairstylists. Clients can schedule appointments by using the mobile application.
+
+
+Don't need authentication:
+- Create a new account
+
+- Page to forgot a password
+
+- Login
+
+Need Authentication:
+
+- Dashboard listing daily and monthly scheduled appointments
+
+- Profile page with option to reset user information and password
 
 ---
 
@@ -69,7 +76,6 @@ Initial requirements:
 #### Running the web application (Frontend)
 
 ```bash
-
 # Clone this repository
 $ git clone git@github.com:wilsonfsouza/gobarber-frontend-web.git
 
@@ -83,7 +89,6 @@ $ yarn install
 $ yarn start
 
 # The application will open at port:3000 - access http://localhost:3000
-
 ```
 
 ---
