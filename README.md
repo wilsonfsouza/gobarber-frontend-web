@@ -42,6 +42,18 @@ To see the **mobile client**, click here: [GoBarber Mobile](https://github.com/w
 
 ---
 
+## 🔥 Preview
+
+Demo credentials:
+<br />
+
+acc: peppa@test.com / password: demo-password-peppa
+<br />
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://gobarberweb.wilsonfranca.dev/)
+
+---
+
 ## ⚙️ Features
 
 The web page was designed to be used by service providers. Clients can schedule appointments by using the mobile application.
